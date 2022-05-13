@@ -35,6 +35,7 @@ Display the filtered image using plot and imshow.
 import cv2
 import matplotlib.pyplot as plt
 image=cv2.imread("Image1.png")
+
 # Load the image, Convert to grayscale and remove noise
 gray_img=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 img=cv2.GaussianBlur(gray_img,(3,3),0)
