@@ -38,8 +38,10 @@ image=cv2.imread("Image1.png")
 # Load the image, Convert to grayscale and remove noise
 gray_img=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 img=cv2.GaussianBlur(gray_img,(3,3),0)
+
 # SOBEL EDGE DETECTOR
 # SOBEL-X
+
 sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
 plt.figure(figsize=(16,16))
 plt.subplot(1,2,1)
